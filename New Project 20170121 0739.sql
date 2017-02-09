@@ -25,7 +25,7 @@ USE ypeb;
 -- Definition of table `address`
 --
 
-DROP TABLE IF EXISTS `address`;
+/*DROP TABLE IF EXISTS `address`;
 CREATE TABLE `address` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `userID` int(10) unsigned NOT NULL COMMENT '用户ID',
@@ -43,7 +43,7 @@ CREATE TABLE `address` (
 --
 
 /*!40000 ALTER TABLE `address` DISABLE KEYS */;
-INSERT INTO `address` (`id`,`userID`,`address`,`name`,`telephone`,`isDelete`) VALUES 
+/*INSERT INTO `address` (`id`,`userID`,`address`,`name`,`telephone`,`isDelete`) VALUES 
  (1,1,'临沂市兰山区金谷大酒店','赛捷收','14234343434',0),
  (3,2,'临沂市兰山区金谷大酒店','赛捷收','14234343434',0),
  (4,1,'某某地址','某某人','23232323232',1),
@@ -55,7 +55,7 @@ INSERT INTO `address` (`id`,`userID`,`address`,`name`,`telephone`,`isDelete`) VA
 -- Definition of table `advertisement`
 --
 
-DROP TABLE IF EXISTS `advertisement`;
+/*DROP TABLE IF EXISTS `advertisement`;
 CREATE TABLE `advertisement` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL COMMENT '标题，名称',
@@ -70,7 +70,7 @@ CREATE TABLE `advertisement` (
 --
 
 /*!40000 ALTER TABLE `advertisement` DISABLE KEYS */;
-INSERT INTO `advertisement` (`id`,`name`,`descripe`,`url`,`type`) VALUES 
+/*INSERT INTO `advertisement` (`id`,`name`,`descripe`,`url`,`type`) VALUES 
  (1,'test1','test1','ad1.png',0),
  (2,'test2','test2','ad2.png',0),
  (4,'test','tweetewterewqrewqr','1484531181345activity.jpg',1),
@@ -626,7 +626,7 @@ CREATE TABLE `pointtrade` (
 -- Definition of table `role`
 --
 
-DROP TABLE IF EXISTS `role`;
+/*DROP TABLE IF EXISTS `role`;
 CREATE TABLE `role` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL COMMENT '角色名',
@@ -647,7 +647,7 @@ CREATE TABLE `role` (
 --
 
 /*!40000 ALTER TABLE `role` DISABLE KEYS */;
-INSERT INTO `role` (`id`,`name`,`super`,`shopWeb`,`points`,`member`,`order`,`message`,`seeting`,`trade`,`isDelete`) VALUES 
+/*INSERT INTO `role` (`id`,`name`,`super`,`shopWeb`,`points`,`member`,`order`,`message`,`seeting`,`trade`,`isDelete`) VALUES 
  (1,'super',1,1,1,1,1,1,1,1,0);
 /*!40000 ALTER TABLE `role` ENABLE KEYS */;
 
@@ -656,7 +656,7 @@ INSERT INTO `role` (`id`,`name`,`super`,`shopWeb`,`points`,`member`,`order`,`mes
 -- Definition of table `roll`
 --
 
-DROP TABLE IF EXISTS `roll`;
+/*DROP TABLE IF EXISTS `roll`;
 CREATE TABLE `roll` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
@@ -670,7 +670,7 @@ CREATE TABLE `roll` (
 --
 
 /*!40000 ALTER TABLE `roll` DISABLE KEYS */;
-INSERT INTO `roll` (`id`,`name`,`url`,`goodsID`) VALUES 
+/*INSERT INTO `roll` (`id`,`name`,`url`,`goodsID`) VALUES 
  (1,'test1','banner1.png',1),
  (2,'test2','banner2.png',1),
  (3,'test3','banner3.png',1),
@@ -683,7 +683,7 @@ INSERT INTO `roll` (`id`,`name`,`url`,`goodsID`) VALUES
 -- Definition of table `setting`
 --
 
-DROP TABLE IF EXISTS `setting`;
+/*DROP TABLE IF EXISTS `setting`;
 CREATE TABLE `setting` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `price` double NOT NULL COMMENT '当前1积分对应RMB价格',
@@ -705,7 +705,7 @@ CREATE TABLE `setting` (
 --
 
 /*!40000 ALTER TABLE `setting` DISABLE KEYS */;
-INSERT INTO `setting` (`id`,`price`,`month`,`giveDays`,`consumeDays`,`withdrawRate`,`firstAward`,`secondAward`,`maxPoints`,`feedbackAward`,`isUsing`,`isDelete`) VALUES 
+/*INSERT INTO `setting` (`id`,`price`,`month`,`giveDays`,`consumeDays`,`withdrawRate`,`firstAward`,`secondAward`,`maxPoints`,`feedbackAward`,`isUsing`,`isDelete`) VALUES 
  (1,1,1,1,1,1,0.23,0.1,1000,1,1,0);
 /*!40000 ALTER TABLE `setting` ENABLE KEYS */;
 
